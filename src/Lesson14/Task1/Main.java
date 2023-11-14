@@ -7,5 +7,6 @@ public class Main {
         ShapeCalculator shapeCalculator =new ShapeCalculator();
         shapeCalculator.calculateArea(0.5);
         shapeCalculator.calculateArea(5.2,7.6);
+        shapeCalculator.calculateArea(5,10);
     }
 }

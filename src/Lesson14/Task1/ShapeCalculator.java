@@ -1,12 +1,6 @@
 package Lesson14.Task1;
 
 public class ShapeCalculator {
-    /*int length;
-    int width;
-    double radius;
-    int base;
-    int height;
-    */
 
 
     public void calculateArea(int length,int width){
