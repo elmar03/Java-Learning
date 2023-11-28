@@ -8,7 +8,5 @@ public class Main {
         oddNumber.start();
         evenNumber.start();
 
-
-
     }
 }
