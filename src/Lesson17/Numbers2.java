@@ -11,7 +11,7 @@ public class Numbers2 {
             Thread thread0 = new Thread(() -> {
                 synchronized (lock) {
                     while (count % 2 == 0 && count <= MAX_COUNT) {
-                        System.out.println(Thread.currentThread().getName() + " Even Number: " + count);
+                        System.out.println(" Even Number: " + count);
                         count++;
                     }
                     try {
@@ -23,7 +23,7 @@ public class Numbers2 {
             Thread thread1 = new Thread(() -> {
                 synchronized (lock) {
                     while (count % 2 != 0 && count <= MAX_COUNT) {
-                        System.out.println(Thread.currentThread().getName() + " Odd Number: " + count);
+                        System.out.println( " Odd Number: " + count);
                         count++;
                     }
                     lock.notify();

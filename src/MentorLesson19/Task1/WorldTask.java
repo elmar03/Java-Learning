@@ -5,6 +5,7 @@ public class WorldTask implements Runnable{
 
 
     @Override
+<<<<<<< HEAD
     public void run() {
         synchronized (lock){
         for (int i = 0; i < 3; i++) {
@@ -13,3 +14,12 @@ public class WorldTask implements Runnable{
             lock.notify();
         }}}
 }
+=======
+    public synchronized void run() {
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("World");
+
+        }}}
+
+>>>>>>> 9e14541 (Initial commit2)
