@@ -10,6 +10,7 @@ public class HelloTask implements Runnable{
 
     @Override
     public void run() {
+<<<<<<< HEAD
         synchronized (lock){
         for (int i = 0; i < 3; i++) {
             System.out.println("Hello");
@@ -23,3 +24,12 @@ public class HelloTask implements Runnable{
 
     }
 }}
+=======
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Hello");
+
+        }
+
+    }
+}
+>>>>>>> 9e14541 (Initial commit2)
