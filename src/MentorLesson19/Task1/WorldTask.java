@@ -9,7 +9,12 @@ public class WorldTask implements Runnable{
         synchronized (lock){
         for (int i = 0; i < 3; i++) {
             System.out.println("World");
+            try{
+                lock.wait();
 
+            }catch (Exception e){
+
+            }
             lock.notify();
         }}}
 }
