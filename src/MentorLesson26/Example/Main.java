@@ -1,4 +1,4 @@
-package MentorLesson26;
+package MentorLesson26.Example;
 
 import java.util.Arrays;
 import java.util.List;
