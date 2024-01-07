@@ -1,4 +1,4 @@
-package MentorLesson27;
+package MentorLesson27.Task;
 
 public class Main {
     public static void main(String[] args) {

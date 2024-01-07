@@ -27,7 +27,7 @@ public class TaskManager {
         for (Task existingTaskList: tasks) {
             if(existingTaskList.getName().equals(name)){
                 tasks.remove(name);
-                System.out.println("Task deleted");
+                System.out.println("MentorLesson27.Task deleted");
             }else {
                 System.out.println("Please enter valid input");
             }

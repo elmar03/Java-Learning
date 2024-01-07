@@ -28,7 +28,7 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Task{" +
+        return "MentorLesson27.Task{" +
                 "name='" + name + '\'' +
                 ", level=" + level +
                 '}';

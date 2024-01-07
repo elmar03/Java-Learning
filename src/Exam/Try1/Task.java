@@ -1,7 +1,5 @@
 package Exam.Try1;
 
-import Exam.Try1.PriorityLevel;
-
 public class Task {
     String name;
 

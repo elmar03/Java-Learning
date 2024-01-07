@@ -7,10 +7,10 @@ public class Main {
 
         TaskManager taskManager = new TaskManager(new ArrayList<>());
 //
-//        taskManager.add(new Task("A",PriorityLevel.LOW));
-//        taskManager.add(new Task("B",PriorityLevel.HIGH));
-//        taskManager.add(new Task("C",PriorityLevel.LOW));
-//        taskManager.add(new Task("D",PriorityLevel.MEDIUM));
+//        taskManager.add(new MentorLesson27.Task("A",PriorityLevel.LOW));
+//        taskManager.add(new MentorLesson27.Task("B",PriorityLevel.HIGH));
+//        taskManager.add(new MentorLesson27.Task("C",PriorityLevel.LOW));
+//        taskManager.add(new MentorLesson27.Task("D",PriorityLevel.MEDIUM));
 //
 //        taskManager.display();
 
