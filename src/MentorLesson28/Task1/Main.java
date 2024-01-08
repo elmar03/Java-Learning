@@ -8,11 +8,15 @@ public class Main {
         studentRecordSystem.addStudent(new Student(2,"B","Math"));
         studentRecordSystem.addStudent(new Student(3,"C","Computer Science"));
 
-        //studentRecordSystem.displayStudents();
+//        studentRecordSystem.displayStudents();
+//
+//
+//        studentRecordSystem.removeStudent(3);
+//
+//        studentRecordSystem.displayStudents();
 
-        studentRecordSystem.removeStudent(3);
+        studentRecordSystem.searchByDepartment("History");
 
-        studentRecordSystem.displayStudents();
 
 
 
