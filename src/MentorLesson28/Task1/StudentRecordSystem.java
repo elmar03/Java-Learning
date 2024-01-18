@@ -17,10 +17,16 @@ public class StudentRecordSystem {
         Iterator<Student> iterator = data.iterator();
         while (iterator.hasNext()){
             Student student = iterator.next();
-            if(student.getId()==student.id){
+            if(student.getId()==id){
                 iterator.remove();
             }
         }
+
+//        for (Student student : data){
+//            if(student.getId()==student.id){
+//                data.remove();
+//            }
+//        }
         System.out.println("Student  with the id of "+id+ " is deleted from database");
 
     }

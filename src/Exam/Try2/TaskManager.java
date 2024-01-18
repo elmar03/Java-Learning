@@ -8,7 +8,7 @@ public class TaskManager {
     List <Task> tasks = new ArrayList<>();
 
 
-    public  void addTask(String name,PriorityLevel level) throws CustomException{
+    public  void addTask(String name, PriorityLevel level) throws CustomException{
         Task task = new Task(name,level);
         try {
             for(Task existingTasklis:tasks){
