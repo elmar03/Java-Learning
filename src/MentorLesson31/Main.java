@@ -11,7 +11,7 @@ public class Main {
             studentDatabase.getAge(2);
 
             // duplicate student
-//            studentDatabase.addStudent(1, "Duplicate John", 25);
+            studentDatabase.addStudent(1, "Duplicate John", 25);
 //
             // trying to retrieve information for non-existent student
             studentDatabase.getStudentName(5);
