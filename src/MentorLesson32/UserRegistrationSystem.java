@@ -1,0 +1,48 @@
+package MentorLesson32;
+
+import MentorLesson31.DuplicateValueException;
+
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class UserRegistrationSystem {
+    Scanner scanner = new Scanner(System.in);
+
+    HashSet<String> registeredUser;
+
+    public UserRegistrationSystem() {
+        this.registeredUser = new HashSet<>();
+    }
+
+    public void addUser() throws DuplicateValueException {
+        while (true) {
+            System.out.println("Please enter the username: ");
+            String userName = scanner.nextLine();
+            System.out.println("Please enter the email: ");
+            String email = scanner.nextLine();
+
+            if (userName.equalsIgnoreCase("Exit") || email.equalsIgnoreCase("Exit")) {
+                System.out.println("Exited program");
+                break;
+            } else if (registeredUser.contains(userName)) {
+                throw new DuplicateValueException("This username already exists, please try new one");
+            } else {
+                User user = new User(userName, email);
+                registeredUser.add(String.valueOf(user));
+            }
+        }
+
+    }
+
+
+    public void displayUsers() {
+        if (registeredUser.isEmpty()) {
+            System.out.println("There are not any users");
+        } else {
+            for (String item : registeredUser
+            ) {
+                System.out.println(item);
+            }
+        }
+    }
+}
