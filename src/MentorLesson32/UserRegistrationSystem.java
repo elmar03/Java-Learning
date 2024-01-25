@@ -8,13 +8,13 @@ import java.util.Scanner;
 public class UserRegistrationSystem {
     Scanner scanner = new Scanner(System.in);
 
-    HashSet<String> registeredUser;
+    HashSet<User> registeredUser;
 
     public UserRegistrationSystem() {
         this.registeredUser = new HashSet<>();
     }
 
-    public void addUser() throws DuplicateValueException {
+    public void addUser() throws DuplicateValueException, DuplicateUserNameException {
         while (true) {
             System.out.println("Please enter the username: ");
             String userName = scanner.nextLine();
@@ -24,11 +24,11 @@ public class UserRegistrationSystem {
             if (userName.equalsIgnoreCase("Exit") || email.equalsIgnoreCase("Exit")) {
                 System.out.println("Exited program");
                 break;
-            } else if (registeredUser.contains(userName)) {
-                throw new DuplicateValueException("This username already exists, please try new one");
+            } else if (registeredUser.stream().anyMatch(user -> user.getUserName().equalsIgnoreCase(userName))) {
+                throw new DuplicateUserNameException("This username already exists, please try new one");
             } else {
                 User user = new User(userName, email);
-                registeredUser.add(String.valueOf(user));
+                registeredUser.add(user);
             }
         }
 
@@ -39,7 +39,7 @@ public class UserRegistrationSystem {
         if (registeredUser.isEmpty()) {
             System.out.println("There are not any users");
         } else {
-            for (String item : registeredUser
+            for (User item : registeredUser
             ) {
                 System.out.println(item);
             }
